@@ -1,0 +1,38 @@
+#for int:some in int_list:main
+#    print "hello world"
+##    var some
+#end
+#
+#proc test
+#    print "hello proc"
+#end
+#
+#call test
+
+component position
+    #print "inside position component"
+	var float:x
+	var float:y
+	var float:z
+	
+	trigger step
+
+	state start
+		eval "x + 0.1" x=float:x --out float:x
+		#set float:x 1
+		#print "state move"
+	end
+end
+
+#prefab cube --with position
+prefab cube position
+
+set int:hund 1
+for int:some in int:hund
+#    print "inside loop"
+	spawn cube
+end
+
+#invoke init
+
+#print "hello world"

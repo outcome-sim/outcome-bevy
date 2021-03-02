@@ -1,0 +1,7 @@
+[scenario]
+name = "cubes-example" # has to match name of scenario directory
+version = "0.1.0"
+engine = "*"
+
+[mods]
+cubes = "*"

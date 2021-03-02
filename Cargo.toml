@@ -1,0 +1,12 @@
+[package]
+name = "bevy-outcome"
+version = "0.1.0"
+authors = ["adamsky <adamsky@enum.space>"]
+edition = "2018"
+
+[dependencies]
+bevy = "0.4.0"
+#outcome-net = { git = "https://github.com/outcome-rs/outcome" }
+#outcome-net = { path = "../outcome/outcome-net", features = ["zmq_transport"] }
+outcome-net = { path = "../outcome/outcome-net" }
+outcome-core = { path = "../outcome/outcome-core", features = ["machine_sandbox"] }
